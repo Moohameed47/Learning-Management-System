@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Feedback extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'user_id', 'group_id', 'feedback_text', 'rating'
+    ];
 }
