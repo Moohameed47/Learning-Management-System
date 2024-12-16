@@ -188,40 +188,212 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
         <li class="nav-item">
-            <a class="nav-link " href="index.html">
+            <a class="nav-link " href="{{route('/')}}">
                 <i class="bi bi-grid"></i>
                 <span>Dashboard</span>
             </a>
         </li><!-- End Dashboard Nav -->
 
+        <li class="nav-heading">Users</li>
         <li class="nav-item">
-            <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-                <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
+            <a class="nav-link collapsed" data-bs-target="#instructor-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-layout-text-window-reverse"></i><span>Instructors</span><i
+                    class="bi bi-chevron-down ms-auto"></i>
             </a>
-            <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                <li>
-                    <a href="{{route("tables-data")}}">
-                        <i class="bi bi-circle"></i><span>Data Tables</span>
+            <ul id="instructor-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>All Instructors</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Add Instructor</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Update Instructor</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Delete Instructor</span>
                     </a>
                 </li>
             </ul>
-        </li><!-- End Tables Nav -->
-
-        <li class="nav-heading">Pages</li>
-
+        </li><!-- End Instructors Nav -->
         <li class="nav-item">
-            <a class="nav-link collapsed" href="{{route('contact')}}">
-                <i class="bi bi-envelope"></i>
-                <span>Contact</span>
+            <a class="nav-link collapsed" data-bs-target="#Mentor-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-layout-text-window-reverse"></i><span>Mentors</span><i
+                    class="bi bi-chevron-down ms-auto"></i>
             </a>
-        </li><!-- End Contact Page Nav -->
-
+            <ul id="Mentor-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>All Mentors</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Add Mentor</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Update Mentor</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Delete Mentor</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Mentors Nav -->
         <li class="nav-item">
-            <a class="nav-link collapsed" href="{{route('error-404')}}">
-                <i class="bi bi-dash-circle"></i>
-                <span>Error 404</span>
+            <a class="nav-link collapsed" data-bs-target="#receptionists-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-layout-text-window-reverse"></i><span>receptionists</span><i
+                    class="bi bi-chevron-down ms-auto"></i>
             </a>
-        </li><!-- End Error 404 Page Nav -->
+            <ul id="receptionists-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>All Receptionists</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Add Receptionist</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Update Receptionist</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Delete Receptionist</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Reception Nav -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#students-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-layout-text-window-reverse"></i><span>students</span><i
+                    class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="students-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>All Students</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Add Student</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Update Student</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Delete Student</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Students Nav -->
+
+
+        <li class="nav-heading">Courses</li>
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#courses-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-layout-text-window-reverse"></i><span>Courses</span><i
+                    class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="courses-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>All Courses</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Add Course</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Update Course</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Delete Course</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Courses Nav -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#groups-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-layout-text-window-reverse"></i><span>Groups</span><i
+                    class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="groups-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>All Groups</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Add Group</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Update Group</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Delete Group</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Groups Nav -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#rounds-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-layout-text-window-reverse"></i><span>Rounds</span><i
+                    class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="rounds-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>All Rounds</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Add Round</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Update Round</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="{{route('tables-data')}}">
+                        <span>Delete Round</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Rounds Nav -->
 
     </ul>
 
