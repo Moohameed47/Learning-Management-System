@@ -9,6 +9,14 @@ class InstructorMentorLeaveTracking extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'user_id', 'leave_date', 'leave_type', 'reason', 'status'
+        'user_id', 'group_id', 'leave_date', 'status'
     ];
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+    public function group()
+    {
+        return $this->belongsTo(Group::class);
+    }
 }

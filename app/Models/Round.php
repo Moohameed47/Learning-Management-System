@@ -9,6 +9,10 @@ class Round extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'name', 'start_date', 'end_date'
+        'name'
     ];
+    public function groups()
+    {
+        return $this->hasMany(Group::class);
+    }
 }

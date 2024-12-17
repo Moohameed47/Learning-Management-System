@@ -9,6 +9,15 @@ class Group extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'round_id', 'instructor_id', 'mentor_id', 'status'
+        'round_id', 'name', 'status'
     ];
+    public function round()
+    {
+        return $this->belongsTo(Round::class);
+    }
+
+    public function attendances()
+    {
+        return $this->hasMany(Attendance::class);
+    }
 }

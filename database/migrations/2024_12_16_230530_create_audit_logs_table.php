@@ -13,7 +13,6 @@ class CreateAuditLogsTable extends Migration
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->string('action');
             $table->text('details');
-            $table->timestamp('action_date');
             $table->timestamps();
         });
     }

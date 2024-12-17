@@ -9,6 +9,10 @@ class AuditLog extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'user_id', 'action', 'timestamp'
+        'user_id', 'action', 'details'
     ];
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

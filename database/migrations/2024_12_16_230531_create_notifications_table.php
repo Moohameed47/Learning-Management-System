@@ -14,7 +14,6 @@ class CreateNotificationsTable extends Migration
             $table->string('message');
             $table->enum('type', ['Info', 'Reminder', 'Warning', 'Alert']);
             $table->boolean('is_read')->default(false);
-            $table->timestamp('sent_at');
             $table->timestamps();
         });
     }
